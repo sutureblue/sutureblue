@@ -1,4 +1,4 @@
-/* ===== Base ===== */
+/* ===== Base Variables ===== */
 
 :root {
   --bg: #050509;
@@ -31,6 +31,7 @@ body {
     "Segoe UI", sans-serif;
   background: radial-gradient(circle at top left, #171728, #050509 55%);
   color: var(--fg);
+  line-height: 1.5;
 }
 
 /* Page wrapper */
@@ -42,7 +43,7 @@ body {
   padding: 24px 16px 40px;
 }
 
-/* ===== Header ===== */
+/* ===== Header / Nav ===== */
 
 .site-header {
   display: flex;
@@ -134,6 +135,7 @@ body {
   border-radius: var(--radius-lg);
   margin-top: 24px;
   border: 1px solid var(--border-soft);
+  padding: 32px 16px 40px;
 }
 
 .section h2 {
@@ -147,7 +149,7 @@ body {
   max-width: 480px;
 }
 
-/* ===== Grid / cards ===== */
+/* ===== Grid + Cards ===== */
 
 .grid {
   display: grid;
@@ -179,7 +181,7 @@ body {
   margin: 0;
 }
 
-/* ===== About layout ===== */
+/* ===== About Layout ===== */
 
 .about-layout {
   display: grid;
@@ -219,7 +221,28 @@ body {
   opacity: 0.8;
 }
 
-/* ===== Responsive tweaks ===== */
+/* ===== Creative Commons Icon Footer ===== */
+
+.license-footer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.cc-icon {
+  width: 14px;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.cc-icon:hover {
+  opacity: 1;
+}
+
+/* ===== Responsive ===== */
 
 @media (max-width: 700px) {
   .site-header {
